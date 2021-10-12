@@ -2,8 +2,8 @@
 
 ## Second homework for Jenkins
 
-* Setup system messgae
-* setup global admin email address
+* ~~Setup system messgae~~
+* ~~setup global admin email address~~
 * setup smtp server
 * setup slack
 * setup github
@@ -18,3 +18,6 @@
 * created a startup shell script for my Jenkins VM that installs Jenkins and creates a hook script in `init.groovy.d` folder. First task done; the script changes system message
 
 ![img1](img/CleanShot%202021-10-12%20at%2013.48.15@2x.png)
+
+* added changing admin email address to script
+* Now i will stop writing in groovy and try to migrate my code to CASC plugin (yaml)
