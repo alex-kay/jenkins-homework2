@@ -13,5 +13,13 @@ Jenkins jenkins = Jenkins.getInstance()
 // set Jenkins system message
 jenkins.setSystemMessage(systemMessage)
 
+//get Jenkins configuration
+def jenkinsLocationConfiguration = JenkinsLocationConfiguration.get()
+
+String adminAddress = "jenkins_admin@example.com"
+// set admin address
+jenkinsLocationConfiguration.setAdminAddress(adminAddress)
+jenkinsLocationConfiguration.save()
+
 // save current Jenkins state to disk
 jenkins.save()
