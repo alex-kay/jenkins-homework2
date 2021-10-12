@@ -9,7 +9,7 @@ sudo apt-get update
 sudo apt-get install jenkins -y
 
 INIT_PATH="/var/lib/jenkins/init.groovy.d"
-sudo mkdir -p /var/lib/jenkins/init.groovy.d
+sudo mkdir -p $INIT_PATH
 
 cat > $INIT_PATH/hookScript.groovy <<- EOF
 #!groovy
