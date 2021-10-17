@@ -4,7 +4,7 @@
 
 * ~~Setup system messgae~~
 * ~~setup global admin email address~~
-* setup smtp server
+* ~~setup smtp server~~
 * setup slack
 * setup github
 * Create three folders `/folder1`, `/folder1/folder2` and `folder3`
