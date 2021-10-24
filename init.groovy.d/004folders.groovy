@@ -26,10 +26,10 @@ lc.setImplicit(true)
 lc.setDefaultVersion("master")
 folder1.addProperty(new FolderLibraries([lc]))
 folder1.setDescription("This folder has a shared library from https://github.com/alex-kay/jenkins-shared-lib")
-FolderOwnershipHelper.setOwnership(folder1, new OwnershipDescription(true, "okurylo"))
+FolderOwnershipHelper.setOwnership(folder1, new OwnershipDescription(true, "poweruser"))
 
 WorkflowJob sampleproject = folder3.createProject(WorkflowJob.class, "Sample Workflow")
 sampleproject.setDefinition(new CpsFlowDefinition("buildPlugin(platforms: ['master'], repo: 'https://github.com/alex-kay/jenkins-homework.git')", true))
-JobOwnerHelper.setOwnership(sampleproject, new OwnershipDescription(true, "okurylo"))
+JobOwnerHelper.setOwnership(sampleproject, new OwnershipDescription(true, "poweruser"))
 
 instance.save()
