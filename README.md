@@ -24,3 +24,4 @@
 * 003 - sets simple credentials from env
 * 004 - sets folders1, folder2 and folder3 and sets ownership
 * 005 - adds admin and poweruser roles
+* Also an environment variables file
