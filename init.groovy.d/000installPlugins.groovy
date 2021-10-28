@@ -6,7 +6,9 @@ def logger = Logger.getLogger("")
 def installed = false
 def initialized = false
 
+
 def pluginParameter="github slack ownership cloudbees-folder cloudbees-credentials workflow role-strategy"
+
 def plugins = pluginParameter.split()
 logger.info("" + plugins)
 def instance = Jenkins.getInstance()
